@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4%;
+}
+
+.sub-con {
+  margin-top: 1.5%;
+}
+
+.appbar {
+  height: 50px;
+  width: 300px;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+span {
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.img {
+  height: 400px;
+}
+
+.rioimg {
+  height: 400px;
+  width: 298.4px;
+  border-left: 1px solid teal;
+  border-right: 1px solid teal;
+}
+
+.footer {
+  width: 300px;
+  height: 70px;
+  background-color: teal;
+}
+
+.msg-icon {
+  color: white;
+  font-size: 45px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+}
+
+.fill-star,
+.out-star {
+  color: #ff0065;
+  font-size: 38px;
+  position: relative;
+  left: 11.5rem;
+  top: 9px;
+}
+
+.out-star {
+  color: white;
+}
