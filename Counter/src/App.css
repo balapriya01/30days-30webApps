@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-con{
+  height: 300px;
+  width: 250px;
+  margin-top: 15%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px green;
+}
+
+.circle{
+    background-color: teal;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-left: 1.6em;
+    margin-top: em;
+
+}
+
+.text{
+  text-align: center;
+  padding: 5px;
+  color: white;
+  position: relative;
+  top: 2.3em;
+}
+
+.btn{
+  background-color: brown;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 5em;
+  margin-left: 3em;
+  margin-top: 1.5em;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.redd{
+  background-color: #A91D3A;
+}
+
+.bluee{
+  background-color: #5AB2FF;
+}
