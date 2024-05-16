@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 import Card from "./components/Card1";
@@ -11,7 +11,7 @@ const App = () => {
   // let uuid = crypto.randomUUID();  //Was trying to add random unique ID, but failed drastically, finallly used uuidv4
   const [click, setClick] = useState();
 
-  const handleClick = async () => {
+  const handleClick = useCallback(  async () => {
     let promise = await fetch("https://www.boredapi.com/api/activity");
     let data = await promise.json();
     setProducts([data]);
@@ -21,9 +21,13 @@ const App = () => {
     //   setProducts([data]);
     //   // console.log(data);
     // });
-  };
+  }, [])
+  
+  
+  
+ 
 
-  const handleTech = () => {
+  const handleTech = useCallback(() => {
     fetch("https://techy-api.vercel.app/api/json")
       .then((response) => response.json())
       .then((data) => {
@@ -31,12 +35,14 @@ const App = () => {
         setClick(false);
         console.log(data);
       });
-  };
+  }, [])
+  
+  
 
   useEffect(() => {
     handleClick();
     handleTech();
-  }, []);
+  }, [handleClick, handleTech]);
 
   return (
     <>
